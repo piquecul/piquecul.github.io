@@ -1,1 +1,1 @@
-Sitemap: https://piquecul.github.io/sitemap.xml
+Sitemap: https://www.piquecul.fr/sitemap.xml
