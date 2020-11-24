@@ -69,14 +69,15 @@
 <a class="nav-link " href="/pensees.html">Pensées</a>
 </li>
 <li class="nav-item">
-<a class="nav-link " href="/tags/climat.html">Climat</a>
+<a class="nav-link " href="/tags/environnement.html">Environnement</a>
 </li>
 <li class="nav-item">
-<a class="nav-link " href="/tags/club-med.html">Club Med</a>
+<a class="nav-link " href="/tags/le-grand-bornand.html">Le Grand-Bornand</a>
 </li>
 <li class="nav-item">
-<a class="nav-link " href="/tags/le-grand-bo.html">Le Grand-Bo</a>
+<a class="nav-link " href="/tags/montagne.html">Montagne</a>
 </li>
+
 <li class="nav-item">
 <a class="nav-link " href="/contact.html">Contact</a>
 </li>
@@ -101,28 +102,28 @@ var documents = [{
     "body": " 404 Page not found :(  The requested page could not be found. "
     }, {
     "id": 1,
-    "url": "https://www.piquecul.fr/tags/climat.html",
-    "title": "Climat",
-    "body": "      {{ page. title }}:       {% for post in site. posts %}      {% if post. tags contains page. title %}			{% include main-loop-card. html %}     {% endif %}   {% endfor %}       {% include sidebar-featured. html %}     "
-    }, {
-    "id": 2,
-    "url": "https://www.piquecul.fr/tags/club-med.html",
-    "title": "Club Med",
-    "body": "      {{ page. title }}:       {% for post in site. posts %}      {% if post. tags contains page. title %}			{% include main-loop-card. html %}     {% endif %}   {% endfor %}       {% include sidebar-featured. html %}     "
-    }, {
-    "id": 3,
     "url": "https://www.piquecul.fr/contact.html",
     "title": "Contact",
     "body": ""
     }, {
-    "id": 4,
+    "id": 2,
+    "url": "https://www.piquecul.fr/tags/environnement.html",
+    "title": "Environnement",
+    "body": "      {{ page. title }}:       {% for post in site. posts %}      {% if post. tags contains page. title %}			{% include main-loop-card. html %}     {% endif %}   {% endfor %}       {% include sidebar-featured. html %}     "
+    }, {
+    "id": 3,
     "url": "https://www.piquecul.fr/",
     "title": "Le Pique Cul",
     "body": "  {% if page. url ==  /  %}            {% assign latest_post = site. posts[0] %}          &lt;div class= topfirstimage  style= background-image: url({% if latest_post. image contains  ://  %}{{ latest_post. image }}{% else %} {{site. baseurl}}/{{ latest_post. image}}{% endif %}); height: 200px;  background-size: cover;  background-repeat: no-repeat; &gt;&lt;/div&gt;           {{ latest_post. title }}  :       {{ latest_post. excerpt | strip_html | strip_newlines | truncate: 155 }}               {{ latest_post. date | date: '%b %d, %Y' }}     ·     &lt;small class= text-muted  &gt;              {% for tag in latest_post. tags %}        {{ tag }} ·         {% endfor %}          &lt;/small&gt;                        {%- assign second_post = site. posts[1] -%}                        {% if second_post. image %}                         &lt;img class= w-100  src= {% if second_post. image contains  ://  %}{{ second_post. image }}{% else %}{{ second_post. image | absolute_url }}{% endif %}  alt= {{ second_post. title }} &gt;                        {% endif %}                                    {{ second_post. title }}          :                       {{ second_post. date | date: '%b %d, %Y' }}           ·           &lt;small class= text-muted  &gt;                       {% for tag in second_post. tags %}             {{ tag }} ·            {% endfor %}                      &lt;/small&gt;                          {%- assign third_post = site. posts[2] -%}                        {% if third_post. image %}                         &lt;img class= w-100  src= {% if third_post. image contains  ://  %}{{ third_post. image }}{% else %}{{site. baseurl}}/{{ third_post. image }}{% endif %}  alt= {{ third_post. title }} &gt;                        {% endif %}                                    {{ third_post. title }}          :                       {{ third_post. date | date: '%b %d, %Y' }}           ·           &lt;small class= text-muted  &gt;                       {% for tag in third_post. tags %}             {{ tag }} ·            {% endfor %}                      &lt;/small&gt;                          {%- assign fourth_post = site. posts[3] -%}                        {% if fourth_post. image %}                        &lt;img class= w-100  src= {% if fourth_post. image contains  ://  %}{{ fourth_post. image }}{% else %}{{site. baseurl}}/{{ fourth_post. image }}{% endif %}  alt= {{ fourth_post. title }} &gt;                        {% endif %}                                    {{ fourth_post. title }}          :                       {{ fourth_post. date | date: '%b %d, %Y' }}           ·           &lt;small class= text-muted  &gt;                       {% for tag in fourth_post. tags %}             {{ tag }} ·            {% endfor %}                      &lt;/small&gt;                        {% for post in site. posts %} {% if post. sticky %}                    {{post. title}}                  {{ post. excerpt | strip_html | truncate: 160 }}                 Lire l'article            	             {% endif %}{% endfor %}{% endif %}                Autres articles:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Précédent       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Suivant &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
+    "id": 4,
+    "url": "https://www.piquecul.fr/tags/le-grand-bornand.html",
+    "title": "Le Grand-Bornand",
+    "body": "      {{ page. title }}:       {% for post in site. posts %}      {% if post. tags contains page. title %}			{% include main-loop-card. html %}     {% endif %}   {% endfor %}       {% include sidebar-featured. html %}     "
+    }, {
     "id": 5,
-    "url": "https://www.piquecul.fr/tags/le-grand-bo.html",
-    "title": "Le Grand-Bo",
+    "url": "https://www.piquecul.fr/tags/montagne.html",
+    "title": "Montagne",
     "body": "      {{ page. title }}:       {% for post in site. posts %}      {% if post. tags contains page. title %}			{% include main-loop-card. html %}     {% endif %}   {% endfor %}       {% include sidebar-featured. html %}     "
     }, {
     "id": 6,
