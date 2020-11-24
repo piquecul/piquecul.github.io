@@ -1,0 +1,12 @@
+<div class="sticky-top sticky-top-offset">
+   <h4 class="font-weight-bold spanborder"><span>La pensée du jour</span></h4>  
+    
+    {% assign pensee = site.data.contentful.pensees.pensee | sort: "sys.created_at" | reverse | first %}
+    <h5 class="font-weight-bold ">
+      {{ pensee.title }}
+    </h5>
+    <span class="pensee">{{ pensee.body | rich_text}}</span>
+    <small class="text-muted">
+      {{ pensee.sys.created_at | date: '%b %d, %Y' }}
+    </small> 
+</div> 

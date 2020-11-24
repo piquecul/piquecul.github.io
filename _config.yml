@@ -1,0 +1,70 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Le Pique Cul
+email: foo@bar.com
+tagline: "L'organe pour empêcher de s'assoir sur la loi de la nature"
+descripton: "L'organe pour empêcher de s'assoir sur la loi de la nature"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.piquecul.fr"
+locale: fr_FR
+#twitter_username: 
+google_analytics_id: G-Q21D6BB48T
+
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-youtube
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+paginate: 10
+ 
+defaults:
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+contentful:
+  output: true
+  spaces:
+    - pensees:
+        space: ENV_CONTENTFUL_SPACE_ID
+        access_token: ENV_CONTENTFUL_ACCESS_TOKEN
+        cda_query:
+          content_type: 'pensee'
+        all_entries: true
+        destination: 'contentful/'
+        rich_text_mappings:
+          embedded-asset-block: AssetRenderer
+          embedded-entry-block: AssetRenderer
+    - blogPosts:
+        space: ENV_CONTENTFUL_SPACE_ID
+        access_token: ENV_CONTENTFUL_ACCESS_TOKEN
+        cda_query:
+          content_type: 'blogPost'
+        individual_entry_files: true
+        all_entries: true
+        destination: 'contentful/'
+        rich_text_mappings:
+          embedded-asset-block: AssetRenderer
+          embedded-entry-block: AssetRenderer
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [.DS_Store, Gemfile, Gemfile.lock, LICENSE, Rakefile, README.txt]

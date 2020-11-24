@@ -1,0 +1,21 @@
+---
+title: "Climat"
+layout: default
+---
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+      <h4 class="font-weight-bold spanborder text-capitalize" id="{{ page.title | downcase }}"><span>{{ page.title }}</span></h4>      
+      {% for post in site.posts %} 
+          {% if post.tags contains page.title %}
+			{% include main-loop-card.html %}
+          {% endif %}
+      {% endfor %}
+    </div>
+    <div class="col-md-4">
+      {% include sidebar-featured.html %}    
+    </div>
+  </div>
+</div>

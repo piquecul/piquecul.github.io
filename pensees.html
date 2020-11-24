@@ -1,0 +1,11 @@
+---
+layout: page
+title: Pensées
+---
+
+  {% assign pensees = site.data.contentful.pensees.pensee | sort: "sys.created_at" | reverse %}
+  {% for pensee in pensees %} 
+  <h5 class="font-weight-bold spanborder article-title"><span>{{pensee.title}}</span>  ·  <small class="text-muted">{{ pensee.sys.created_at | date: '%b %d, %Y' }}</small></h5>
+  <article class="pensee">{{ pensee.body | rich_text }}</article>
+  <br/>
+  {% endfor %}

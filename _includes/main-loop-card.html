@@ -1,0 +1,27 @@
+<div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold article-title">
+	<a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+	</h2>
+	<p class="excerpt">
+	   {{ post.excerpt  | strip_html | strip_newlines | truncate: 186}}
+	</p>
+	<small class="text-muted">
+        {{ post.date | date: '%b %d, %Y' }}
+    </small> · 
+    <small class="text-muted"">
+       <span class="catlist">
+       {% for tag in post.tags %}
+         <a class="smoothscroll text-dark" href="{{site.baseurl}}/tags/{{ tag | replace: ' ', '-' | downcase }}.html">{{ tag }}</a><span class="sep"> · </span>
+       {% endfor %}
+       </span>
+    </small>
+</div>
+{% if post.image %}
+	<div class="col-md-3 pr-0 text-right">
+	<a href="{{site.baseurl}}{{post.url}}">
+	<img class="w-100" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
+	</a>
+	</div>
+{% endif %}
+</div>
