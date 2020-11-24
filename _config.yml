@@ -67,4 +67,4 @@ contentful:
           embedded-entry-block: AssetRenderer
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [.DS_Store, Gemfile, Gemfile.lock, LICENSE, Rakefile, README.txt]
+exclude: [.DS_Store, Gemfile, Gemfile.lock, LICENSE, Rakefile, README.txt, vendor]
