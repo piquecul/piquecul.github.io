@@ -5,7 +5,6 @@ gem 'jekyll', '~> 3.6', '>= 3.6.3'
 gem 'kramdown-parser-gfm'
 gem 'rake'
 
-
 group :jekyll_plugins do
   gem 'jekyll-contentful-data-import'
   gem 'jekyll-feed'

@@ -23,6 +23,7 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         env:
           JEKYLL_ENV: production
+          CONTENTFUL_PROCESSING: true
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
         with:
