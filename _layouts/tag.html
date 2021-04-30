@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="container relative pb-12 lg:pb-16 xl:pb-20">
+    <div class="px-4 mx-auto mt-10 max-w-screen-md sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28 flex">
+        <div class="text-center ml-8">
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 leading-10 sm:text-4xl sm:leading-none md:text-5xl">
+                <span class="text-color2">{{ page.tag }}</span> <br class="xl:hidden"> &gt; tous les articles.</h1>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white">
+<ul class="container max-w-screen-md py-12">
+    {% for post in site.tags[page.tag] %}
+        <li>
+        		{%- if first_post.cover -%}
+        		<div class="max-w-5xl mx-auto rounded shadow-2xl mb-6">
+            	<img src="{{ first_post.cover | relative_url }}" >
+        		</div>
+        		{%- endif -%}
+            <time class="uppercase text-xs text-gray-500 font-bold">
+            {% assign m = post.date | date: "%-m" %}
+            {{ post.date | date: "%-d" }}
+            {% case m %}
+            {% when '1' %}Janvier
+            {% when '2' %}Février
+            {% when '3' %}Mars
+              {% when '4' %}Avril
+              {% when '5' %}Mai
+              {% when '6' %}Juin
+              {% when '7' %}Juillet
+              {% when '8' %}Août
+              {% when '9' %}Septembre
+              {% when '10' %}Octobre
+              {% when '11' %}Novembre
+              {% when '12' %}Décembre
+            {% endcase %}
+            {{ post.date | date: "%Y" }}
+            </time> 
+       
+           {% for tag in post.tags %}
+           <span class="tag"><a href="/tags/{{ tag | replace: ' ', '-' | downcase }}.html" class="uppercase text-xs text-gray-500 font-bold">{{ tag }}</a></span>
+           {% endfor %}
+
+            <h2 class="mt-1 text-2xl tracking-tight font-extrabold text-gray-900 sm:leading-none md:text-3xl"> <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> </h2>
+
+            <div class="mt-6 post-content">
+                <p>{{ post.excerpt | strip_newlines}}</p>
+            </div>  
+     
+            <div class="mt-6">
+                <a href="{{ post.url | relative_url }}" class="text-base leading-6 font-semibold text-color2 hover:text-color1 transition ease-in-out duration-150 hover-underline">Lire l'article →</a>
+            </div>
+        </li>
+        <hr class="w-full bg-gray-100 my-8" style="height: 1px;">
+    {%- endfor -%}
+</ul>
+</div>

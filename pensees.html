@@ -1,11 +1,52 @@
 ---
-layout: page
+layout: default
 title: Pensées
 ---
 
-  {% assign pensees = site.data.contentful.pensees.pensee | sort: "sys.created_at" | reverse %}
-  {% for pensee in pensees %} 
-  <h5 class="font-weight-bold spanborder article-title"><span>{{pensee.title}}</span>  ·  <small class="text-muted">{{ pensee.sys.created_at | date: '%b %d, %Y' }}</small></h5>
-  <article class="pensee">{{ pensee.body | rich_text }}</article>
-  <br/>
-  {% endfor %}
+<div class="container relative pb-12 lg:pb-16 xl:pb-20">
+    <div class="px-4 mx-auto mt-10 max-w-screen-md sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28 flex">
+        <div class="text-center ml-8">
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 leading-10 sm:text-4xl sm:leading-none md:text-5xl">
+                Quelques <span class="text-color2">pensées</span> philosophiques
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white">
+	<ul class="container max-w-screen-md py-12">
+        {% include pensee.html title="Le coeur du problème" body="Il est impossible à un riche de faire un infarctus,
+Il n'a pas de cœur. 
+Depuis bien longtemps, étouffé par ses biens, il ne bat plus... pour l'Autre.
+Pour son butin, sans âme et sans vergogne, il pille les richesses du monde.
+Par sa faute, la Création exsangue, se meure!" %}
+
+
+
+    {% include pensee.html title="Les pavés de la miséricorde" body="Si l'enfer des pauvres est pavé des bonnes intentions et des mensonges des nantis,
+Alors les pavés sont les intentions des petits pour retrouver leur dignité humaine,
+Justes missives, depuis leur enfer du quotidien, lancées à la face des puissants.
+Flambées destructrices des désespoirs et des arrogances, le monde convulse.
+La bataille des illusions mises à nues, s'achève, dans l'exténuation des indigents
+Et par l'enfer enfin dépavé, ultime labeur des miséreux.
+La terre ainsi libérée de son joug, labourée par la rage du partage,
+Arrosée de soif de justice,
+Une fleur ensemencée de beauté simple, éclot ; choyée par l'astre flamboyant,
+Bercée par le souffle de l'Esprit.
+Ce fût pourquoi l'enfer, jaloux de sa magnificence,
+Inventa au commencement des temps, l' éclat mensonger de l'or." %}
+
+{% include pensee.html title="L'amour sans raison" body="Non pas avoir mais être,
+Non pas faire mais agir.
+Agis en aimant toutes créatures et toutes choses ,
+Sans vouloir les posséder.
+Aimes à la folie sans raisons aucunes,
+Car  la Raison, cette fade tiédeur, brise l'élan de l'Amour.
+Aimes l'Amour, uni depuis le commencement à la Sagesse,
+Car il t'a donné la liberté de le suivre.
+ Sans entraves et sans raisons
+Sois LIBRE !" %}
+
+	</ul>
+</div>

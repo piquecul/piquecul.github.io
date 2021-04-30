@@ -1,12 +1,22 @@
 ---
 layout: default
 ---
-
-<div class="container">
-{% if page.title != null %}
-  <h3 class="font-weight-bold spanborder"><span>{{page.title}}</span></h3>
-{% endif %}	
-  <div class="page-content">
-  {{ content }}
+<article class="container max-w-screen-sm my-12 md:my-16">
+  {%- if page.cover -%}
+  <div class="max-w-5xl mx-auto rounded shadow-2xl mb-6">
+      <img src="{{ page.cover | relative_url }}" >
   </div>
-</div>
+  {%- endif -%}
+
+	<div> 
+     {% for tag in page.tags %}
+       <span class="tag"><a href="/tags/{{ tag | slugify }}/index.html" class="uppercase text-xs text-gray-500 font-bold">{{ tag }}</a></span>
+     {% endfor %}
+   </div>
+    <header>
+        <h1 class="mt-4 text-3xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-4xl sm:leading-none md:text-5xl">{{ page.title | escape }}</h1>
+    </header>
+    <div class="prose mt-8">
+        {{ content }}
+    </div>
+</article>
