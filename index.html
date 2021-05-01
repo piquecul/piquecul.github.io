@@ -18,8 +18,8 @@ layout: default
 <div class="container max-w-screen-md py-12">
     {% assign first_post = site.posts[0] %}
         {%- if first_post.cover -%}
-        <div class="max-w-5xl mx-auto rounded shadow-md mb-6">
-            <img src="{{ first_post.cover | relative_url }}" >
+        <div class="max-w-5xl mx-auto mb-6">
+            <img src="{{ first_post.cover | relative_url }}" class="rounded shadow-md">
         </div>
         {%- endif -%}
         <div>
@@ -86,8 +86,8 @@ layout: default
         {%- if forloop.index > 1 and forloop.index <= 3 -%}
         <li>
             {%- if post.cover -%}
-            <div class="max-w-5xl mx-auto rounded shadow-md mb-6">
-                <img src="{{ post.cover | relative_url }}" >
+            <div class="max-w-5xl mx-auto mb-6">
+                <img src="{{ post.cover | relative_url }}" class="rounded shadow-md">
             </div>
             {%- endif -%}
             <time class="uppercase text-xs text-gray-500 font-bold">
