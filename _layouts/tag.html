@@ -16,9 +16,9 @@ layout: default
 <ul class="container max-w-screen-md py-12">
     {% for post in site.tags[page.tag] %}
         <li>
-        		{%- if first_post.cover -%}
-        		<div class="max-w-5xl mx-auto rounded shadow-2xl mb-6">
-            	<img src="{{ first_post.cover | relative_url }}" >
+        		{%- if post.image -%}
+        		<div class="max-w-5xl mx-auto mb-6">
+            	<img src="{{ post.image | relative_url }}" class="rounded shadow-2xl">
         		</div>
         		{%- endif -%}
             <time class="uppercase text-xs text-gray-500 font-bold">

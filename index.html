@@ -17,9 +17,9 @@ layout: default
 <div class="bg-white">
 <div class="container max-w-screen-md py-12">
     {% assign first_post = site.posts[0] %}
-        {%- if first_post.cover -%}
+        {%- if first_post.image -%}
         <div class="max-w-5xl mx-auto mb-6">
-            <img src="{{ first_post.cover | relative_url }}" class="rounded shadow-md">
+            <img src="{{ first_post.image | relative_url }}" class="rounded shadow-md">
         </div>
         {%- endif -%}
         <div>
@@ -72,9 +72,9 @@ layout: default
     {%- for post in site.posts -%}
         {%- if forloop.index > 1 and forloop.index <= 5 -%}
         <li>
-            {%- if post.cover -%}
+            {%- if post.image -%}
             <div class="max-w-5xl mx-auto mb-6">
-                <img src="{{ post.cover | relative_url }}" class="rounded shadow-md">
+                <img src="{{ post.image | relative_url }}" class="rounded shadow-md">
             </div>
             {%- endif -%}
             <time class="uppercase text-xs text-gray-500 font-bold">

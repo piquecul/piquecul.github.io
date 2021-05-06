@@ -2,9 +2,9 @@
 layout: default
 ---
 <article class="container max-w-screen-sm my-12 md:my-16">
-  {%- if page.cover -%}
+  {%- if page.image -%}
   <div class="max-w-5xl mx-auto rounded shadow-2xl mb-6">
-      <img src="{{ page.cover | relative_url }}" >
+      <img src="{{ page.image | relative_url }}" >
   </div>
   {%- endif -%}
 

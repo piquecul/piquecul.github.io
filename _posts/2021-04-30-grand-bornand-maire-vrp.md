@@ -3,7 +3,7 @@ layout: post
 title: "Le maire du Grand-Bornand, VRP de la promotion immobilière ?"
 tags: ["Le Grand-Bornand"]
 excerpt_separator: <!--more-->
-cover: "./assets/images/chantier-mgm-suize.jpg"
+image: "./assets/images/chantier-mgm-suize.jpg"
 ---
 Après un hiver de froidure et de neige en abondance, dans les prés verdoyants aux pieds des cimes enneigées, les premiers bourgeons et crocus chantent déjà la venue du printemps. Mais au Grand-Bornand, le fleurissement dans les champs de panneaux publicitaires de projets immobiliers vantant le luxe de leurs appartements laisse augurer un printemps précoce de la promotion immobilière et du TP. Ce fleurissement n'est que le résultat des graines d'une politique touristique archaïque semées à tout vent sur tout le territoire de la commune. En témoigne un article du Monde du 21 octobre 2020, corroboré par les dires d'élus du conseil communautaire de la CCVT qui lors d'une assemblée ont entendu le même genre d'allégations, qui cite le maire du Grand-Bornand et dont les propos sont les suivants :<!--more-->
 

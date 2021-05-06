@@ -3,7 +3,7 @@ layout: post
 title: "Navigation en eaux troubles à la Clusaz ?"
 tags: ["La Clusaz"]
 excerpt_separator: <!--more-->
-cover: ./assets/images/retenue-collinaire.jpg
+image: ./assets/images/retenue-collinaire.jpg
 ---
  
 #### AUX USA IL Y A EU LE WATERGATE, Y AURA-T-IL UN WATERL'EAU A LA CLUSAZ ? UNE RESSOURCE AQUIFÈRE DE PLUSIEURS MILLIONS DE M3 VOLONTAIREMENT OUBLIÉE ET SABOTÉE ?

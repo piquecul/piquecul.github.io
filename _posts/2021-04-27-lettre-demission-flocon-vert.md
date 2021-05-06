@@ -3,7 +3,7 @@ layout: post
 title: "Le label Flocon Vert...nis écologique de la politique de bétonisation du Grand-Bornand"
 tags: ["Le Grand-Bornand"]
 excerpt_separator: <!--more-->
-cover: "./assets/images/chantier-lac-de-la-cour.jpg"
+image: "./assets/images/chantier-lac-de-la-cour.jpg"
 ---
 Ca y est ! L'obtention du label Flocon Vert tant désiré par la mairie du Grand Bornand est officielle et fait même les choux gras de son dossier presse et ce malgré les avertissements de dérive de « bétonnisation » outrancière de la part de la commune relatés par un participant à la démarche de labellisation directement à la directrice de Mountain Riders. Voici ci-dessous sa lettre de démission qui explique pourquoi le Flocon Vert est une farce. <!--more-->
 
