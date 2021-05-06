@@ -368,18 +368,9 @@ video {
 	color: #1a202c;
 	border-left-width: .25rem;
 	border-left-color: #e2e8f0;
-	quotes: "\201C""\201D""\2018""\2019";
 	margin-top: 1.6em;
 	margin-bottom: 1.6em;
 	padding-left: 1em
-}
-
-.prose blockquote p:first-of-type::before {
-	content: open-quote
-}
-
-.prose blockquote p:last-of-type::after {
-	content: close-quote
 }
 
 .prose h1 {
@@ -532,6 +523,12 @@ video {
 .prose figure>* {
 	margin-top: 0;
 	margin-bottom: 0
+}
+
+.prose figcaption {
+	font-size: 0.9rem;
+	color: #374151;
+	text-align: center;
 }
 
 .prose h2 code {
