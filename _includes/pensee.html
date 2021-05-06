@@ -1,5 +1,7 @@
 <li>
+	{%- if include.title -%}
 	<h2 class="mt-1 text-2xl tracking-tight font-extrabold text-gray-900 sm:leading-none md:text-3xl text-center">{{ include.title }}</h2>
+	{%- endif -%}
 	<div class="mt-6">
 		<p class="whitespace-pre-line text-center">
 		{{ include.body }}
