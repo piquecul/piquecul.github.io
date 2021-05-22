@@ -50,7 +50,8 @@ layout: default
             <h2 class="mt-1 text-2xl tracking-tight font-extrabold text-gray-900 sm:leading-none md:text-3xl"> <a href="{{ first_post.url | relative_url }}">{{ first_post.title | escape }}</a> </h2>        
 
             <div class="mt-6 post-content">
-                {{ first_post.excerpt }}
+              {% assign excerptParts = first_post.excerpt | split: "<!-- excerpt-start -->" %}
+              {{ excerptParts | last }}
             </div>  
      
             {%- if first_post.excerpt != first_post.content -%}
@@ -106,7 +107,10 @@ layout: default
             <h2 class="mt-1 text-2xl tracking-tight font-extrabold text-gray-900 sm:leading-none md:text-3xl"> <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> </h2>
 
             <div class="mt-6 post-content">
-                <p>{{ post.excerpt | strip_newlines}}</p>
+                <p>
+                  {% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
+                  {{ excerptParts | last }}
+                </p>
             </div>  
      
             {%- if post.excerpt != post.content -%}
