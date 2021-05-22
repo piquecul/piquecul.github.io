@@ -53,9 +53,11 @@ layout: default
                 {{ first_post.excerpt }}
             </div>  
      
+            {%- if first_post.excerpt != first_post.content -%}
             <div class="mt-6">
                 <a href="{{ first_post.url | relative_url }}" class="text-base leading-6 font-semibold text-color2 hover:text-color1 transition ease-in-out duration-150 hover-underline">Lire l'article →</a>
             </div>
+            {%- endif -%}
         </div>
    </div>
 </div>
@@ -107,9 +109,11 @@ layout: default
                 <p>{{ post.excerpt | strip_newlines}}</p>
             </div>  
      
+            {%- if post.excerpt != post.content -%}
             <div class="mt-6">
                 <a href="{{ post.url | relative_url }}" class="text-base leading-6 font-semibold text-color2 hover:text-color1 transition ease-in-out duration-150 hover-underline">Lire l'article →</a>
             </div>
+            {%- endif -%}
         </li>
         <hr class="w-full bg-gray-100 my-8" style="height: 1px;">
         {%- elsif forloop.index > 1 -%}
