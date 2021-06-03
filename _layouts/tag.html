@@ -16,11 +16,14 @@ layout: default
 <ul class="container max-w-screen-md py-12">
     {% for post in site.tags[page.tag] %}
         <li>
-        		{%- if post.image -%}
-        		<div class="max-w-5xl mx-auto mb-6">
-            	<img src="{{ post.image | relative_url }}" class="rounded shadow-2xl">
-        		</div>
-        		{%- endif -%}
+    		{%- if post.image -%}
+    		<div class="max-w-5xl mx-auto mb-6">
+        	   <img src="{{ post.image | relative_url }}" class="rounded shadow-2xl">
+               {%- if post.image_caption -%}
+                <div class="text-gray-500 text-right"><small>{{ post.image_caption }}</small></div>
+                {%- endif -%}
+    		</div>
+    		{%- endif -%}
             <time class="uppercase text-xs text-gray-500 font-bold">
             {% assign m = post.date | date: "%-m" %}
             {{ post.date | date: "%-d" }}

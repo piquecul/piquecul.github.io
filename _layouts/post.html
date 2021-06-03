@@ -3,10 +3,13 @@ layout: default
 ---
 <article class="container max-w-screen-sm my-12 md:my-16">
   {%- if page.image -%}
-        <div class="max-w-5xl mx-auto mb-6">
-            <img src="{{ page.image | relative_url }}" class="rounded shadow-2xl">
-        </div>
-        {%- endif -%}
+  <div class="max-w-5xl mx-auto mb-6">
+      <img src="{{ page.image | relative_url }}" class="rounded shadow-2xl">
+      {%- if page.image_caption -%}
+      <div class="text-gray-500 text-right"><small>{{ page.image_caption }}</small></div>
+      {%- endif -%}
+  </div>
+  {%- endif -%}
 
 	<div>
 	  <time class="uppercase pr-4 text-xs text-gray-500 font-bold">

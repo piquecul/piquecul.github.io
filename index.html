@@ -20,6 +20,9 @@ layout: default
         {%- if first_post.image -%}
         <div class="max-w-5xl mx-auto mb-6">
             <img src="{{ first_post.image | relative_url }}" class="rounded shadow-md">
+            {%- if first_post.image_caption -%}
+            <div class="text-gray-500 text-right"><small>{{ first_post.image_caption }}</small></div>
+            {%- endif -%}
         </div>
         {%- endif -%}
         <div>
@@ -78,6 +81,9 @@ layout: default
             {%- if post.image -%}
             <div class="max-w-5xl mx-auto mb-6">
                 <img src="{{ post.image | relative_url }}" class="rounded shadow-md">
+                {%- if post.image_caption -%}
+                <div class="text-gray-500 text-right"><small>{{ post.image_caption }}</small></div>
+                {%- endif -%}
             </div>
             {%- endif -%}
             <time class="uppercase text-xs text-gray-500 font-bold">
