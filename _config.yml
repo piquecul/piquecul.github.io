@@ -5,9 +5,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.piquecul.fr"
 locale: fr_FR
 facebook_username: PiqueCul
-twitter_username: PiqueCul
 google_analytics_id: G-Q21D6BB48T
 locale: fr_FR
+twitter:
+  username: PiqueCul
+  card: summary
 
 plugins:
   - jekyll-feed

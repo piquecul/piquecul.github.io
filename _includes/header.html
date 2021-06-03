@@ -24,10 +24,10 @@
                         </div>
                     </li>
                     {% endif %}
-                    {% if site.twitter_username %}
+                    {% if site.twitter.username %}
                     <li>
                         <div class="lg:inline-flex">
-                            <a href="https://twitter.com/{{ site.twitter_username }}" class="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 pl-6 ml-6 twitter-icon">Twitter</a>
+                            <a href="https://twitter.com/{{ site.twitter.username }}" class="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 pl-6 ml-6 twitter-icon">Twitter</a>
                         </div>
                     </li>
                     {% endif %}
@@ -54,12 +54,12 @@
                         <a href="/tags/{{ tag[0] | slugify }}/index.html" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"> {{ tag[0] }} </a>
                         {% endfor %}
                         <a href="/pensees.html" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out">Pensées</a>
-                        <a href="https://twitter.com/{{ site.twitter_username }}" class="border-t border-gray-200 block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"> Contact </a>
+                        <a href="https://twitter.com/{{ site.twitter.username }}" class="border-t border-gray-200 block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"> Contact </a>
                         {% if site.facebook_username %}
                         <a href="https://facebook.com/{{ site.facebook_username }}" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"> Facebook </a>
                         {% endif %}
-                        {% if site.twitter_username %}
-                        <a href="https://twitter.com/{{ site.twitter_username }}" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"> Twitter </a>
+                        {% if site.twitter.username %}
+                        <a href="https://twitter.com/{{ site.twitter.username }}" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"> Twitter </a>
                         {% endif %}
                     </div>
                 </div>
