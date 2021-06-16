@@ -7,9 +7,9 @@ image: ./assets/images/retenue-collinaire.jpg
 ---
 ```
 Erratum du 22 mai 2021
-Suite à une erreur de notre part, nous nous excusons auprès du site Ski-aravis.com qui nous signale avoir été choqué d'être mis en cause de la sorte dans une phrase de cet article et qui nous demande des explications que nous donnons ci dessous.
+Suite à une erreur de notre part, nous nous excusons auprès du site Ski-aravis.com qui nous signale avoir été choqué d'être mis en cause de la sorte dans une phrase de cet article et qui nous demande des explications que nous donnons ci dessous.
 
-En effet, suite à une coquille de notre part lors de la correction, il aurait fallu lire  « élucidé » et non « confirmé » dans la phrase « Ce dernier point étant confirmé par le site ski-aravis.com et jusqu’à présent non démenti par la mairie, qui dit : « C’est d’ailleurs dans l’optique de la réalisation du nouveau complexe immobilier des Granges (résidence touristique Odalys) que ce télémix a été construit. ».Ce qui donne un autre sens à la phrase . La correction sera faite dans l'article ce jour qui enlèvera toutes ambiguïtés et dédouanera le site « Ski-aravis.com » de toutes interprétations erronées qui auraient pu être induites.
+En effet, suite à une coquille de notre part lors de la correction, il aurait fallu lire  « élucidé » et non « confirmé » dans la phrase « Ce dernier point étant confirmé par le site ski-aravis.com et jusqu’à présent non démenti par la mairie, qui dit : « C’est d’ailleurs dans l’optique de la réalisation du nouveau complexe immobilier des Granges (résidence touristique Odalys) que ce télémix a été construit. ».Ce qui donne un autre sens à la phrase . La correction sera faite dans l'article ce jour qui enlèvera toutes ambiguïtés et dédouanera le site « Ski-aravis.com » de toutes interprétations erronées qui auraient pu être induites.
 
 Cependant n'ayant aucun doute sur la fiabilité des sources de Ski-aravis.com, nous tenons pour vrai ce qui a été écrit et c'est pourquoi nous avons cité Ski-aravis.com car la phrase éclaire parfaitement les liens d'intérêt qui existent entre la promotion immobilière, les remontées mécaniques et donc la mairie.
 
