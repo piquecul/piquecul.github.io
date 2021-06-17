@@ -3,8 +3,7 @@ layout: post
 title: "Au Grand-Bornand, la phobie des verts ferait-elle virer les comptes de la commune au rouge ?"
 tags: ["Le Grand-Bornand"]
 excerpt_separator: <!--more-->
-image: "./assets/images/grand-bornand-mairie.jpg"
-image_caption: "Ôh mairie, si tu savais, tout le mal que tu nous fais !"
+image: "./assets/images/grand-bornand-mairie.png"
 ---
 Que ce soit dans la presse écrite ou bien lors d'interview télévisées, le maire du Grand-Bornand arbore sa parure verte pour scander à qui mieux mieux, que, non, ce n'est pas un horrible destructeur d'espaces verts  pour une économie du tout ski et que, oui, il y a belle lurette qu'il s'est engagé sur la voie de la transition écologique, de la protection du patrimoine environnemental et de la tradition. Le tout, sans que le rouge de la honte ne lui monte à la figure. Mais se rend-il compte que dans son habit vert, il ressemble plus au petit bonhomme vert CETELEM bardé de crédits et d'emprunts que d'un maire veillant jalousement à la protection du bien commun aussi bien environnemental que culturel ? Que nul n'est dupe, tout du moins dans la commune et le haut de la vallée de son discours vert plein de duplicité et d'hypocrisie qui fait rire jaune et fait monter une colère noire due à sa peur bleue de l'écologie dont il aime, pourtant tant à se parer ?
 
