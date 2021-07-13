@@ -7,9 +7,7 @@ image: "./assets/images/beauregard-alpage-protégé.jpg"
 ---
 Rage car la commune de La Clusaz a approuvé par délibération du conseil municipal du 29 avril 2021 la création de la retenue collinaire mixte d’altitude d’un volume de 148 000 m³ destiné avant tout à l’alimentation en eau des canons à neige. Elle se situera dans le bois de La Colombière, trésor de biodiversité, dans le massif de Beauregard à 1500 m d’altitude, avec une emprise totale de 8 hectares.
 
-Espoir car des alternatives à cette retenue collinaire existent. Elles émergent des collectifs et associations environnementales qui ont étudié l’ensemble des ressources en eau dont La Clusaz dispose et qui rendrait caduque la construction de cette cinquième retenue collinaire.
-
-Le Pique Cul vous dévoile le document produit par le Collectif Fier Aravis en fin d’article.<!--more-->
+Espoir car des alternatives à cette retenue collinaire existent. Elles émergent des collectifs et associations environnementales qui ont étudié l’ensemble des ressources en eau dont La Clusaz dispose et qui rendrait caduque la construction de cette cinquième retenue collinaire.<!--more-->
 
 
 ### Fontaine, je ne boirai pas de ton eau ?
